@@ -26,8 +26,8 @@ export const PostList = () => {
                     (posts) => {
                         return <section className="posts">
                             <header>{posts.title}</header>
-                            <body>{posts.author}</body>
-                            <footer>{posts.category}</footer>
+                            <header>{posts.user.first_name} {posts.user.last_name}</header>
+                            <header>{posts.categories.label}</header>
                         </section>
                     }
                 )
